@@ -32,7 +32,7 @@ jobs:
 
             - name: upload screenshots
               if: always()
-              uses: action/uploads-artifacts@v3
+              uses: action/uploads-artifact@v3
               with:
                   name: screenshots
                   path: screenshots/
