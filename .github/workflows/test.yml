@@ -29,10 +29,3 @@ jobs:
                   sleep 5
             - name: run tests
               run: python test.py
-
-            - name: upload screenshots
-              if: always()
-              uses: action/uploads-artifact@v3
-              with:
-                  name: screenshots
-                  path: screenshots/
